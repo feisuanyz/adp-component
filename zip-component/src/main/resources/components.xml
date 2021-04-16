@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<components>
+    <!-- 组件名称-->
+    <!-- 组件标题 -->
+    <!-- 组件的实现类 -->
+    <!-- 标签 -->
+    <!-- 分组名称-->
+    <!-- 图标 -->
+    <!-- 描述 -->
+    <component name="UnzipComponent"
+               title="解压组件"
+               implClass="com.feisuanyz.component.zip.UnzipComponent"
+               tag="zip"
+               groupName="tool"
+               icon="UnzipIcon"
+               description="解压组件">
+        <!-- 定义入参列表 -->
+        <inputParameters>
+            <!-- 名称-->
+            <!-- 标题 -->
+            <!-- 数据类型 -->
+            <!-- 默认值 -->
+            <!-- 控件类型，可选值：
+            	Input  输入框    
+            	InputNumber    数字输入框    
+            	Switch 开关组件    
+            	Textarea   文本框    
+            	Radio  单选框    
+            	Checkbox   多选款    
+            	Select 下拉框    
+            	form-single-value  子窗体输入单条内容   
+            	form-multi-value   子窗体输入多条内容    
+            	choice-output-result   选择输出结果    
+            	Table  表格    
+            	注意：当控件类型为Radio、Checkbox、Select、Table 需要填写optionImplClass 
+            -->
+            <!-- 是否必填，可选值：true(是)、false(否),默认fasle -->
+            <!-- 是否隐藏，可选值：（true）、false(否)),默认false -->
+            <!-- 描述 -->
+            <inputParameter name="unzipDTO"
+                            title="解压信息"
+                            dataType="com.feisuanyz.component.zip.dto.UnzipDTO"
+                            controlType="form-single-value"
+                            required="true"
+                            hided="false"
+                            description="解压信息">
+                <children>
+                    <inputParameter name="downloadFile"
+                                    title="下载的文件内容对象"
+                                    dataType="com.feisuanyz.flow.component.bean.DownloadFile"
+                                    controlType="Input"
+                                    variable="true"
+                                    required="true"
+                                    description="下载的文件内容对象"/>
+                                    
+                    <inputParameter name="unzipDirSnippet"
+                                    title="解压的目录片段"
+                                    dataType="java.lang.String"
+                                    controlType="Input"
+                                    required="false"
+                                    description="解压的目录片段"/>
+                </children>
+            </inputParameter>
+        </inputParameters>
+        <!-- 定义出参列表 -->
+        <outputParameters>
+            <outputParameter name="unzipExecuteResult"
+                             title="解压执行结果"
+                             dataType="com.feisuanyz.flow.component.bean.UnzipResult"
+                             required="true"
+                             description="解压执行结果"/>
+        </outputParameters>
+    </component>
+</components>
