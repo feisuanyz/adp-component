@@ -72,3 +72,25 @@
 ###### 图3-7 创建components.xml文件
 
 具体代码如下：
+
+![具体代码1](https://images.gitee.com/uploads/images/2021/0830/114219_1e446546_8721401.png "具体代码1.png")
+![具体代码2](https://images.gitee.com/uploads/images/2021/0830/114231_f707d067_8721401.png "具体代码2.png")
+###### 说明：具体信息可参考飞算开发者学院（ https://www.feisuanyz.com/support ）中的“文档中心-高阶专题-自定义组件”章节，内有详细介绍
+
+##### 步骤 8	
+在resources目录下创建META-INF\services文件夹，在services目录中创建com.feisuanyz.flow.component.FlowComponent文件，如图3_8所示。
+
+![3-8](https://images.gitee.com/uploads/images/2021/0830/140159_a3a90f6e_8721401.png "3_8.png")
+###### 图3-8 创建com.feisuanyz.flow.component.FlowComponent文件
+
+### 4. 组件打包
+#### 4.1 操作步骤
+
+##### 步骤 1	
+用IDEA打包，双击“install”打成jar包，如图4-1所示。
+
+![5-1](https://images.gitee.com/uploads/images/2021/0830/140655_b80714bc_8721401.png "5_1.png")
+###### 图4-1 打jar包
+
+##### 步骤 2	
+将jar、pom文件一起压缩成zip包，如图4-2所示。
