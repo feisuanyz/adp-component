@@ -52,3 +52,23 @@
 
 ![3-4](https://images.gitee.com/uploads/images/2021/0830/113708_c1b6d4bc_8721401.png "3_4.png")
 ###### 图3-4 解压开发包
+
+##### 步骤 5	
+创建自己的Java项目工程，编辑pom.xml文件，在pom.xml文件中添加上一步中得到的Jar包，如图3-5所示。
+
+![3-5](https://images.gitee.com/uploads/images/2021/0830/113810_0be3128b_8721401.png "3_5.png")
+###### 图3-5 添加Jar包（说明：systemPath标签需要改成自己开发工具包解压目录）
+
+##### 步骤 6	
+创建好自己的项目结构，新建Class，实现FlowComponet接口中的execute方法，如图3-6所示。
+
+![3-6](https://images.gitee.com/uploads/images/2021/0830/113942_3979bf51_8721401.png "3_6.png")
+###### 图3-6 新建Class实现execute方法（说明：execute方法中为功能实现代码）
+
+##### 步骤 7	
+在resources目录下创建components.xml文件，此文件用来描述组件属性，如图3-7所示。
+
+![3-7](https://images.gitee.com/uploads/images/2021/0830/114018_9bec8628_8721401.png "3_7.png")
+###### 图3-7 创建components.xml文件
+
+具体代码如下：
